@@ -86,8 +86,13 @@ img {
   width: 330px;
   height: 220px;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .container {
     grid-template-areas:
       "inicio"
@@ -99,7 +104,7 @@ img {
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .container {
     grid-template-areas:
       "inicio inicio"

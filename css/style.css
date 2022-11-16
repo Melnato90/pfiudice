@@ -100,14 +100,20 @@ img {
   height: 220px;
 }
 
-@media screen and (max-width: 576px) {
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
   .container {
     grid-template-areas: "inicio" "work" "shop" "aboutme" "contactme";
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .container {
     grid-template-areas: "inicio inicio" "work shop" "aboutme contactme";
     grid-template-columns: 1fr 1fr;
