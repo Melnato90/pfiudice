@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+$color-link: black;
+$color-link1: #f09d93;
+$gradiante-footer: #d0e9fd 0%, 24.881234765052795%, #c4aedd 49.76246953010559%,
+  74.8812347650528%, #f3f3f3 100%;
 .container {
   width: 100%;
   height: 100vh;
@@ -12,6 +16,18 @@
   grid-template-areas:
     "work shop inicio"
     "aboutme contactme inicio";
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $color-link;
+    text-transform: uppercase;
+    &:hover {
+      opacity: 0.65;
+      color: $color-link1;
+    }
+  }
 }
 .container_inicio {
   background-image: url(../imagenes/formal1.png);
@@ -38,28 +54,21 @@
   grid-area: contactme;
   background-repeat: no-repeat;
 }
-.container > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+html {
+  height: 100%;
 }
-a:hover {
-  opacity: 0.65;
-  color: #f09d93;
+body {
+  min-height: 100vh;
 }
-a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-}
-header {
-  margin: 2%;
-  padding: 2%;
-}
+
 header {
   background-image: url(../imagenes/posiblebanner.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2%;
+  padding: 2%;
 }
 .title_illustration {
   text-align: center;
@@ -73,18 +82,19 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-}
-.card {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-}
-img {
-  width: 330px;
-  height: 220px;
+
+  .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+  }
+  img {
+    width: 330px;
+    height: 220px;
+  }
 }
 .logo {
   display: flex;
@@ -115,11 +125,14 @@ img {
   }
 }
 footer {
-  background-image: url(../imagenes/gradiantefooter.png);
+  background: linear-gradient(to right, $gradiante-footer);
   display: flex;
   font-size: 1rem;
   text-align: left;
   bottom: 0.4rem;
   padding: 1rem;
   justify-content: space-between;
+  .redes {
+    color: $color-link;
+  }
 }
