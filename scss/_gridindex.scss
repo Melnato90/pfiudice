@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "work shop inicio"
+    "aboutme contactme inicio";
+
+  > a {
+    font-family: $font-links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $color-link;
+    text-transform: uppercase;
+    &:hover {
+      opacity: 0.65;
+      color: $color-link1;
+    }
+  }
+
+  .container_inicio {
+    background-image: url(../imagenes/formal1.png);
+    grid-area: inicio;
+    background-size: cover;
+  }
+  .container_work {
+    background-image: url(../imagenes/1.jpg);
+    grid-area: work;
+    background-repeat: no-repeat;
+  }
+  .container_shop {
+    background-image: url(../imagenes/1.jpg);
+    grid-area: shop;
+    background-repeat: no-repeat;
+  }
+  .container_aboutme {
+    background-image: url(../imagenes/1.jpg);
+    grid-area: aboutme;
+    background-repeat: no-repeat;
+  }
+  .container_contactme {
+    background-image: url(../imagenes/1.jpg);
+    grid-area: contactme;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,21 @@
+.containercards {
+  width: 100%;
+  max-width: 1200%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+
+  .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+  }
+  img {
+    width: 330px;
+    height: 220px;
+  }
+}
