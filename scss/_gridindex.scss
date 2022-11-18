@@ -22,29 +22,30 @@
     }
   }
 
+  @mixin sobreinicio($gridarea, $bcknorepeat, $bcksizecover, $bckimageinicio) {
+    grid-area: $gridarea;
+    background-repeat: $bcknorepeat;
+    background-size: $bcksizecover;
+    background-image: $bckimageinicio;
+  }
   .container_inicio {
-    background-image: url(../imagenes/formal1.png);
-    grid-area: inicio;
-    background-size: cover;
+    @include sobreinicio(
+      inicio,
+      no-repeat,
+      cover,
+      url(../imagenes/formal1.png)
+    );
   }
   .container_work {
-    background-image: url(../imagenes/1.jpg);
-    grid-area: work;
-    background-repeat: no-repeat;
+    @include sobreinicio(work, no-repeat, cover, url(../imagenes/1.jpg));
   }
   .container_shop {
-    background-image: url(../imagenes/1.jpg);
-    grid-area: shop;
-    background-repeat: no-repeat;
+    @include sobreinicio(shop, no-repeat, cover, url(../imagenes/1.jpg));
   }
   .container_aboutme {
-    background-image: url(../imagenes/1.jpg);
-    grid-area: aboutme;
-    background-repeat: no-repeat;
+    @include sobreinicio(aboutme, no-repeat, cover, url(../imagenes/1.jpg));
   }
   .container_contactme {
-    background-image: url(../imagenes/1.jpg);
-    grid-area: contactme;
-    background-repeat: no-repeat;
+    @include sobreinicio(contactme, no-repeat, cover, url(../imagenes/1.jpg));
   }
 }

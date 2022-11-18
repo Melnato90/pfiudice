@@ -24,50 +24,49 @@
   color: #f09d93;
 }
 .container .container_inicio {
-  background-image: url(../imagenes/formal1.png);
   grid-area: inicio;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(../imagenes/formal1.png);
 }
 .container .container_work {
-  background-image: url(../imagenes/1.jpg);
   grid-area: work;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/1.jpg);
 }
 .container .container_shop {
-  background-image: url(../imagenes/1.jpg);
   grid-area: shop;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/1.jpg);
 }
 .container .container_aboutme {
-  background-image: url(../imagenes/1.jpg);
   grid-area: aboutme;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/1.jpg);
 }
 .container .container_contactme {
-  background-image: url(../imagenes/1.jpg);
   grid-area: contactme;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagenes/1.jpg);
 }
 
-.containercards {
-  width: 100%;
-  max-width: 1200%;
+.containerimg {
   display: flex;
+  padding: 5px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
 }
-.containercards .card {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
+
+.column {
+  flex: 25%;
+  padding: 5px;
 }
-.containercards img {
-  width: 330px;
-  height: 220px;
+.column img {
+  width: 100%;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
