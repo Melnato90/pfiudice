@@ -11,10 +11,11 @@
   grid-template-areas: "work shop inicio" "aboutme contactme inicio";
 }
 .container > a {
+  padding-top: 20px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -27,31 +28,31 @@
   grid-area: inicio;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imagenes/formal1.png);
+  background-image: url(../imagenes/logowhite.png);
 }
 .container .container_work {
   grid-area: work;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Optimizadas/instasizerecorte.jpeg);
 }
 .container .container_shop {
   grid-area: shop;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Optimizadas/instasizerecorte.jpeg);
 }
 .container .container_aboutme {
   grid-area: aboutme;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Optimizadas/instasizerecorte.jpeg);
 }
 .container .container_contactme {
   grid-area: contactme;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imagenes/1.jpg);
+  background-image: url(../imagenes/Optimizadas/instasizerecorte.jpeg);
 }
 
 .containerimg {
@@ -145,6 +146,62 @@ footer {
 
 .navbar {
   font-family: "Montserrat", sans-serif;
+}
+
+button {
+  position: relative;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: #16ab9e;
+  color: white;
+  transition: 0.5s;
+  overflow: hidden;
+}
+button:hover {
+  color: #6a4141;
+}
+button:hover span:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: -100%;
+}
+button:hover span:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: -100%;
+}
+button:hover span:nth-child(3) {
+  width: 1px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+button:hover span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+button:hover:hover span {
+  transition: 0.5s;
+  overflow: hidden;
+  position: absolute;
+  background: black;
+}
+button:hover:hover span:nth-child(1) {
+  left: 0;
+}
+button:hover:hover span:nth-child(2) {
+  right: 0;
+}
+button:hover:hover span:nth-child(3) {
+  bottom: 0;
+}
+button:hover:hover span:nth-child(4) {
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

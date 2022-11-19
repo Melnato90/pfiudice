@@ -9,10 +9,11 @@
     "aboutme contactme inicio";
 
   > a {
+    padding-top: 20px;
     font-family: $font-links;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     text-decoration: none;
     color: $color-link;
     text-transform: uppercase;
@@ -33,19 +34,39 @@
       inicio,
       no-repeat,
       cover,
-      url(../imagenes/formal1.png)
+      url(../imagenes/logowhite.png)
     );
   }
   .container_work {
-    @include sobreinicio(work, no-repeat, cover, url(../imagenes/1.jpg));
+    @include sobreinicio(
+      work,
+      no-repeat,
+      cover,
+      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
+    );
   }
   .container_shop {
-    @include sobreinicio(shop, no-repeat, cover, url(../imagenes/1.jpg));
+    @include sobreinicio(
+      shop,
+      no-repeat,
+      cover,
+      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
+    );
   }
   .container_aboutme {
-    @include sobreinicio(aboutme, no-repeat, cover, url(../imagenes/1.jpg));
+    @include sobreinicio(
+      aboutme,
+      no-repeat,
+      cover,
+      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
+    );
   }
   .container_contactme {
-    @include sobreinicio(contactme, no-repeat, cover, url(../imagenes/1.jpg));
+    @include sobreinicio(
+      contactme,
+      no-repeat,
+      cover,
+      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
+    );
   }
 }
