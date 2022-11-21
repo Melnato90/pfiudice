@@ -1,19 +1,23 @@
-.container {
+.divgrid {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "work shop inicio"
-    "aboutme contactme inicio";
-
+    "inicio"
+    "work"
+    "shop"
+    "aboutme"
+    "contactme";
   > a {
     padding-top: 20px;
     font-family: $font-links;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-decoration: none;
     text-shadow: $shadow;
     text-transform: uppercase;
@@ -22,50 +26,22 @@
     }
   }
 
-  @mixin sobreinicio($gridarea, $bcknorepeat, $bcksizecover, $bckimageinicio) {
+  @mixin sobreinicio($gridarea) {
     grid-area: $gridarea;
-    background-repeat: $bcknorepeat;
-    background-size: $bcksizecover;
-    background-image: $bckimageinicio;
   }
   .container_inicio {
-    @include sobreinicio(
-      inicio,
-      no-repeat,
-      cover,
-      url(../imagenes/logowhite.png)
-    );
+    @include sobreinicio(inicio);
   }
   .container_work {
-    @include sobreinicio(
-      work,
-      no-repeat,
-      cover,
-      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
-    );
+    @include sobreinicio(work);
   }
   .container_shop {
-    @include sobreinicio(
-      shop,
-      no-repeat,
-      cover,
-      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
-    );
+    @include sobreinicio(shop);
   }
   .container_aboutme {
-    @include sobreinicio(
-      aboutme,
-      no-repeat,
-      cover,
-      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
-    );
+    @include sobreinicio(aboutme);
   }
   .container_contactme {
-    @include sobreinicio(
-      contactme,
-      no-repeat,
-      cover,
-      url(../imagenes/Optimizadas/instasizerecorte.jpeg)
-    );
+    @include sobreinicio(contactme);
   }
 }
