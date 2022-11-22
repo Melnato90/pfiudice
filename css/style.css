@@ -29,18 +29,23 @@
 }
 .divgrid .container_inicio {
   grid-area: inicio;
+  scale: 90%;
 }
 .divgrid .container_work {
   grid-area: work;
+  scale: 90%;
 }
 .divgrid .container_shop {
   grid-area: shop;
+  scale: 90%;
 }
 .divgrid .container_aboutme {
   grid-area: aboutme;
+  scale: 90%;
 }
 .divgrid .container_contactme {
   grid-area: contactme;
+  scale: 90%;
 }
 
 .containerimg {
@@ -67,6 +72,10 @@
 .card-group .card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fotopersonal {
+  margin-right: 2rem;
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -116,6 +125,11 @@ header {
   padding: 2%;
 }
 
+main {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -130,6 +144,7 @@ footer {
   bottom: 0.4rem;
   padding: 1rem;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .navbar {
@@ -192,6 +207,27 @@ footer {
 }
 .btnindex:hover :nth-child(4) {
   top: 0;
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url(../imagenes/1.jpg);
+  background-size: cover;
+  background-position: center;
+  scale: 90%;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

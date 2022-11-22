@@ -26,22 +26,23 @@
     }
   }
 
-  @mixin sobreinicio($gridarea) {
+  @mixin sobreinicio($gridarea, $scalefoto) {
     grid-area: $gridarea;
+    scale: $scalefoto;
   }
   .container_inicio {
-    @include sobreinicio(inicio);
+    @include sobreinicio(inicio, 90%);
   }
   .container_work {
-    @include sobreinicio(work);
+    @include sobreinicio(work, 90%);
   }
   .container_shop {
-    @include sobreinicio(shop);
+    @include sobreinicio(shop, 90%);
   }
   .container_aboutme {
-    @include sobreinicio(aboutme);
+    @include sobreinicio(aboutme, 90%);
   }
   .container_contactme {
-    @include sobreinicio(contactme);
+    @include sobreinicio(contactme, 90%);
   }
 }
