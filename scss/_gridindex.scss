@@ -1,6 +1,6 @@
 .divgrid {
-  width: 100%;
-  height: 100vh;
+  width: 95%;
+  height: 95vh;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
@@ -21,9 +21,6 @@
     text-decoration: none;
     text-shadow: $shadow;
     text-transform: uppercase;
-    &:hover {
-      opacity: 0.65;
-    }
   }
 
   @mixin sobreinicio($gridarea, $scalefoto) {

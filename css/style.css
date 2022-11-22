@@ -5,8 +5,8 @@
 }
 
 .divgrid {
-  width: 100%;
-  height: 100vh;
+  width: 95%;
+  height: 95vh;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
@@ -23,9 +23,6 @@
   text-decoration: none;
   text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
-}
-.divgrid > a:hover {
-  opacity: 0.65;
 }
 .divgrid .container_inicio {
   grid-area: inicio;
